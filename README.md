@@ -19,12 +19,12 @@
 
 1. **构建Docker镜像**
 ```bash
-docker build -t weather-mcp-server .
+docker pull bellababy/mcp-server-weather-python:1.0.0
 ```
 
 2. **运行Docker容器**
 ```bash
-docker run -d -p 8000:8000 -e WEATHER_API_KEY=你的API密钥 weather-mcp-server
+docker run -d -p 8000:8000 -e WEATHER_API_KEY=你的API密钥 bellababy/mcp-server-weather-python:1.0.0
 ```
 
 ### 环境变量
